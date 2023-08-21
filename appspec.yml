@@ -27,7 +27,7 @@ hooks:
     - location: aws-scripts/set-permissions.sh
       timeout: 300
       runas: root
-    - location: aws-scripts/install-dependencies.sh.sh
+    - location: aws-scripts/install-dependencies.sh
       timeout: 300
       runas: ec2-user
     - location: aws-scripts/build.sh
