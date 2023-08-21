@@ -1,0 +1,39 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ec2-user/app
+permissions:
+  - object: /home/ec2-user/app
+    mode: 644
+    acls:
+      - "d:u::rwx"
+      - "d:g::rwx"
+      - "d:o::rwx"
+    owner: ec2-user
+    type:
+      - directory
+file_exists_behavior: OVERWRITE
+hooks:
+  ApplicationStop:
+    - location: aws-scripts/stop-server.sh
+      timeout: 300
+      runas: ec2-user
+  BeforeInstall:
+    - location: aws-scripts/clean-up.sh
+      timeout: 300
+      runas: ec2-user
+  AfterInstall:
+    - location: aws-scripts/set-permissions.sh
+      timeout: 300
+      runas: root
+    - location: aws-scripts/install-dependencies.sh.sh
+      timeout: 300
+      runas: ec2-user
+    - location: aws-scripts/build.sh
+      timeout: 300
+      runas: ec2-user
+  ApplicationStart:
+    - location: aws-scripts/start-server.sh
+      timeout: 300
+      runas: ec2-user
