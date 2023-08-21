@@ -14,3 +14,8 @@ app.get('/', (req, res) => {
 app.listen(3000, () => {
     console.log('Server started on port 3000');
 });
+
+
+// TODO:
+//  1. MongoDB connection from cluster
+//  2. EC2 user data script does not start pm2 server
