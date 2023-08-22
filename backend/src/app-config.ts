@@ -1,4 +1,5 @@
-import 'dotenv/config';
+import dotenv from 'dotenv';
+dotenv.config({ path: __dirname + '/../.env' })
 
 export default {
     mongoUrl: process.env.MONGO_URL,
