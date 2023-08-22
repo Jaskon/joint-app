@@ -17,5 +17,5 @@ app.listen(3000, () => {
 
 
 // TODO:
-//  1. MongoDB connection from cluster
-//  2. EC2 user data script does not start pm2 server
+//  1. EC2 user data script does not start pm2 server
+//  2. Exception handler for MongoDB connection. Try reconnecting few times, then exit or log an error
