@@ -37,6 +37,8 @@ export async function connectToMongo(retryCount: number, retryDelay: number, lon
     return await recurse(retryCount);
 }
 
+// TODO: Separate file with mongo api
+//  (?) Separately utils with reconnection. Use this reconnection util in the beginning of each api call. Also wrap each call in 'try catch'.
 export async function getCollections() {
     const database = client.db(appConfig.mongoDatabase);
     return await database.listCollections().toArray();
