@@ -1,8 +1,5 @@
-/**
- * This is an API express router
- */
 import express from 'express';
-import { getCollection, getCollections } from './connections/mongo';
+import { getCollection, getCollections } from '../connections/mongo';
 
 const router = express.Router();
 

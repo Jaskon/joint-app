@@ -1,14 +1,16 @@
 import express from 'express';
 const app = express();
-import apiRouter from './api';
+import apiRouter from './routers/api';
+import * as path from 'path';
+
+
+app.use(express.static(path.join(__dirname + '/../../frontend/build')));
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname + '/../../frontend/build/index.html'));
+});
 
 
 app.use('/api', apiRouter);
-
-
-app.get('/', (req, res) => {
-    res.send('Hello world!');
-});
 
 
 app.listen(3000, () => {
