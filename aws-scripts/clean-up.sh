@@ -7,3 +7,4 @@ rm -rf /home/ec2-user/app/backend/node_modules
 rm -rf /home/ec2-user/app/backend/dist
 rm -rf /home/ec2-user/app/frontend/node_modules
 rm -rf /home/ec2-user/app/frontend/build
+
