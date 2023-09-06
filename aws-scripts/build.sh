@@ -4,3 +4,4 @@ set -x
 
 npm run build --prefix /home/ec2-user/app/backend
 npm run build --prefix /home/ec2-user/app/frontend
+
