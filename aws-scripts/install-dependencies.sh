@@ -6,4 +6,4 @@ set -x
 cd /home/ec2-user/app/frontend || exit
 npm install
 cd /home/ec2-user/app/backend || exit
-npm /home/ec2-user/app/backend
+npm install
