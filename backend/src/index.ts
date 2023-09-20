@@ -5,12 +5,12 @@ import * as path from 'path';
 
 
 app.use(express.static(path.join(__dirname + '/../../frontend/build')));
-app.get('/', (req, res) => {
+app.use('/api', apiRouter);
+
+// Any other route should be handled by frontend
+app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname + '/../../frontend/build/index.html'));
 });
-
-
-app.use('/api', apiRouter);
 
 
 app.listen(3000, () => {
