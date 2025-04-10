@@ -21,4 +21,24 @@ This is a full-stack application built with React for the frontend and Node.js f
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
    cd your-repo-name
-   
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Set up environment variables:
+   - Create a `.env` file in the root directory.
+   - Add the required variables (e.g., `PORT`, `MONGO_URI`, etc.) as specified in `.env.example`.
+
+4. Start the application:
+   ```bash
+   npm start
+   ```
+
+5. Run tests (optional):
+   ```bash
+   npm test
+   ```
+`
