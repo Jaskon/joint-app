@@ -7,7 +7,7 @@ This is a full-stack application built with React for the frontend and Node.js f
 - **Frontend**: React with TypeScript, React Router, and SCSS for styling.
 - **Backend**: Node.js with Express.js for API handling.
 - **Database**: MongoDB (optional, depending on the app's requirements).
-- **Tooling**: npm for dependency management, Webpack/Babel for bundling, and ESLint/Prettier for code quality.
+Change line 10 to this second time
 
 ## Prerequisites
 
