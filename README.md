@@ -8,6 +8,8 @@ This is a full-stack application built with React for the frontend and Node.js f
 - **Backend**: Node.js with Express.js for API handling.
 - **Database**: MongoDB (optional, depending on the app's requirements).
 Change line 10 to this second time
+New line added
+Second new line added
 
 ## Prerequisites
 
