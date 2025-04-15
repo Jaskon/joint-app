@@ -10,6 +10,8 @@ This is a full-stack application built with React for the frontend and Node.js f
 Change line 10 to this second time
 New line added
 Second new line added
+New line added
+Second new line added
 
 ## Prerequisites
 
